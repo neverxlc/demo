@@ -5,11 +5,12 @@ public class DuoTai {
     public static void main(String[] args) {
 
 
-        Animals cat = new CatExt();
-        System.out.println(cat instanceof Cat);
-        System.out.println(cat instanceof Dog);
+        System.out.println("aaaaaaa");
+//        Animals cat = new CatExt();
+//        System.out.println(cat instanceof Cat);
+//        System.out.println(cat instanceof Dog);
 //        Dog dog = (Dog)cat;
-        cat.eat();
+//        cat.eat();
 //        System.out.println(dog.eat());
 //        System.out.println();
 //        System.out.println(cat instanceof Animals);
