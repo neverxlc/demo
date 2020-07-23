@@ -26,11 +26,13 @@ public class ApiInfoAtomSVImpl implements IApiInfoAtomSV {
 //        for(Map.Entry<String, Object> entry : map.entrySet()) {
 //            update.set(entry.getKey(), entry.getValue());
 //        }
-        return mongoTemplate.save(apiInfo, API_INFO);
+//        return mongoTemplate.save(apiInfo, API_INFO);
+        return mongoTemplate.save(apiInfo);
     }
 
     @Override
     public List<ApiInfo> queryList() {
-        return mongoTemplate.findAll(ApiInfo.class, API_INFO);
+//        return mongoTemplate.findAll(ApiInfo.class, API_INFO);
+        return mongoTemplate.findAll(ApiInfo.class);
     }
 }

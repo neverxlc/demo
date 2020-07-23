@@ -33,7 +33,7 @@ import java.util.concurrent.TimeUnit;
 //@EnableScheduling
 //@EnableGlobalExceptionHandler
 //@EnableParamPrint
-//@ComponentScan(basePackages={"com.example.demo.controller"})
+//@ComponentScan(basePackages={"com.example.demo"})
 public class DemoApplication implements CommandLineRunner {
 
 //	@Autowired

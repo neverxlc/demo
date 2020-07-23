@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class UserController {
 
     @GetMapping("/getAll")
-    @ResponseBody
+//    @ResponseBody
     public Object getAll(){
         User user = new User();
 //        user.setId(1L);

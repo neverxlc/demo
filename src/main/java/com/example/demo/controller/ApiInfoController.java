@@ -15,6 +15,7 @@ public class ApiInfoController {
     @Autowired
     private IApiInfoAtomSV apiInfoAtom;
 
+
     @PostMapping("/save")
     public String save(@RequestBody ApiInfo apiInfo) {
         System.out.println(JSON.toJSONString(apiInfo));
@@ -29,4 +30,5 @@ public class ApiInfoController {
         System.out.println(JSON.toJSONString(apiInfoList));
         return apiInfoList;
     }
+
 }
