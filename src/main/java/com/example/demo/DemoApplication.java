@@ -16,7 +16,10 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -25,6 +28,7 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 import org.springframework.util.StringUtils;
 
 import javax.sql.DataSource;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
@@ -34,7 +38,7 @@ import java.util.concurrent.TimeUnit;
 //@EnableGlobalExceptionHandler
 //@EnableParamPrint
 //@ComponentScan(basePackages={"com.example.demo"})
-public class DemoApplication implements CommandLineRunner {
+public class DemoApplication extends SpringBootServletInitializer {
 
 //	@Autowired
 //	private ThreadPoolTaskScheduler taskScheduler;
@@ -48,13 +52,18 @@ public class DemoApplication implements CommandLineRunner {
 
 	}
 
-	@Override
-	public void run(String... args) throws Exception {
+//	@Override
+//	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+//		return builder.sources(DemoApplication.class);
+//	}
+
+//	@Override
+//	public void run(String... args) throws Exception {
 
 //		log.info("你好世界,{},zheshi ceshi ", args);
-		System.out.println("hhhhh");
-		System.err.println("xxxxxx");
-		test();
+//		System.out.println("hhhhh");
+//		System.err.println("xxxxxx");
+//		test();
 //		ThreadPoolTaskScheduler taskScheduler = new ThreadPoolTaskScheduler();
 //		taskScheduler.initialize();
 //		taskScheduler.getScheduledExecutor().scheduleAtFixedRate(()->{
@@ -64,7 +73,7 @@ public class DemoApplication implements CommandLineRunner {
 //			System.out.println("当前线程是"+Thread.currentThread().getName());
 //		}, new Date(), 10);
 
-	}
+//	}
 
 	private void test(){
 //		Car car = new Car( "Morris", 5);
@@ -73,6 +82,21 @@ public class DemoApplication implements CommandLineRunner {
 //		log.info("carDTO:{}", carDto);
 
 	}
+
+//    @Bean
+//	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
+//
+//
+//		return args->{
+//			System.out.println("Let's inspect the beans provided by Spring Boot:");
+//			String[] beanNames = ctx.getBeanDefinitionNames();
+//			Arrays.sort(beanNames);
+//			for (String beanName : beanNames) {
+//				System.out.println(beanName);
+//			}
+//		};
+//	}
+
 
 //
 //	public void test001(){
