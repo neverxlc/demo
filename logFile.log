@@ -1,0 +1,9 @@
+628  [main] INFO  com.example.demo.vo.HelloWorld - Hello World
+628  [Thread-0] WARN  com.example.demo.vo.HelloWorld - 你好,许林创
+643  [Thread-0] INFO  com.example.demo.vo.HelloWorld - File name is C:\file.zip.
+631  [main] INFO  com.example.demo.vo.HelloWorld - Hello World
+635  [Thread-0] WARN  com.example.demo.vo.HelloWorld - 你好,许林创
+648  [Thread-0] INFO  com.example.demo.vo.HelloWorld - File name is C:\file.zip.
+714  [main] INFO  com.example.demo.vo.HelloWorld - Hello World
+713  [Thread-0] WARN  com.example.demo.vo.HelloWorld - 你好,许林创111
+728  [Thread-0] INFO  com.example.demo.vo.HelloWorld - File name is C:\file.zip.

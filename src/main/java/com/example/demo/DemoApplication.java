@@ -6,6 +6,7 @@ import com.example.demo.annotation.EnableParamPrint;
 import com.example.demo.domain.Car;
 import com.example.demo.domain.CarDTO;
 import com.example.demo.mapper.CarMapper;
+import com.example.demo.service.StorageProperties;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.Banner;
@@ -18,6 +19,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -34,6 +36,7 @@ import java.util.concurrent.TimeUnit;
 
 @SpringBootApplication
 @Slf4j
+@EnableConfigurationProperties(StorageProperties.class)
 //@EnableScheduling
 //@EnableGlobalExceptionHandler
 //@EnableParamPrint

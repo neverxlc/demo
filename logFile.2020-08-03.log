@@ -1,0 +1,3 @@
+574  [main] INFO  com.example.demo.vo.HelloWorld - Hello World
+576  [Thread-0] WARN  com.example.demo.vo.HelloWorld - 你好,许林创111
+589  [Thread-0] INFO  com.example.demo.vo.HelloWorld - File name is C:\file.zip.
