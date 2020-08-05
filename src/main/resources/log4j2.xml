@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+<!--        <Console name="Console" target="SYSTEM_OUT">-->
+<!--&lt;!&ndash;            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>&ndash;&gt;-->
+<!--            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %l [%t] %p - %m%n"/>-->
+<!--&lt;!&ndash;            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %r [%t] %p %c %notEmpty{%x }- %m%n"/>&ndash;&gt;-->
+<!--        </Console>-->
+<!--        <File name="MyFile" fileName="logs/app.log">-->
+<!--            <PatternLayout>-->
+<!--                <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %l [%t] %p - %m%n</Pattern>-->
+<!--            </PatternLayout>-->
+<!--        </File>-->
+        <RollingFile name="RollingFile"
+                     filePattern="logs/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="250 MB"/>
+            </Policies>
+        </RollingFile>
+<!--        <NoSql name="databaseAppender">-->
+<!--&lt;!&ndash;            <MongoDb3 databaseName="hctym" collectionName="applicationLog" server="localhost"&ndash;&gt;-->
+<!--&lt;!&ndash;                       />&ndash;&gt;-->
+<!--&lt;!&ndash;            <MongoDb databaseName="hctym" collectionName="applicationLog" server="localhost"&ndash;&gt;-->
+<!--&lt;!&ndash;            />&ndash;&gt;-->
+<!--            <MongoDb databaseName="hctym" collectionName="applicationLog" server="localhost" port="27017"/>-->
+<!--        </NoSql>-->
+    </Appenders>
+    <Loggers>
+        <Logger name="com.example" level="INFO"/>
+        <Root level="error">
+<!--            <AppenderRef ref="Console"/>-->
+<!--            <AppenderRef ref="MyFile"/>-->
+            <AppenderRef ref="RollingFile"/>
+<!--            <AppenderRef ref="databaseAppender"/>-->
+        </Root>
+    </Loggers>
+</Configuration>

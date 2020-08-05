@@ -1,0 +1,12 @@
+2020-08-04 17:58:32.523 com.example.demo.vo.HelloWorld.lambda$main$0(HelloWorld.java:16) [Thread-1] WARN - 你好,许林创111
+2020-08-04 17:58:32.522 com.example.demo.vo.HelloWorld.main(HelloWorld.java:23) [main] INFO - Hello World
+2020-08-04 17:58:32.530 com.example.demo.vo.HelloWorld.lambda$main$0(HelloWorld.java:17) [Thread-1] INFO - File name is C:\file.zip.
+2020-08-04 18:00:16.233 com.example.demo.vo.DemoLog4j.main(DemoLog4j.java:18) [main] INFO - Hello World
+2020-08-04 18:00:16.233 com.example.demo.vo.DemoLog4j.lambda$main$0(DemoLog4j.java:13) [Thread-1] WARN - 你好,许林创123123
+2020-08-04 18:00:16.242 com.example.demo.vo.DemoLog4j.lambda$main$0(DemoLog4j.java:14) [Thread-1] INFO - File name is C:\file.zip.
+2020-08-04 18:02:10,901 INFO c.e.d.v.HelloWorld [main] Hello World
+2020-08-04 18:02:10,901 WARN c.e.d.v.HelloWorld [Thread-1] 你好,许林创111
+2020-08-04 18:02:10,917 INFO c.e.d.v.HelloWorld [Thread-1] File name is C:\file.zip.
+2020-08-04 18:02:49,822 INFO c.e.d.v.HelloWorld [main] Hello World
+2020-08-04 18:02:49,825 WARN c.e.d.v.HelloWorld [Thread-1] 你好,许林创111
+2020-08-04 18:02:49,832 INFO c.e.d.v.HelloWorld [Thread-1] File name is C:\file.zip.

@@ -1,0 +1,3 @@
+2020-08-04 18:05:29,365 WARN c.e.d.v.HelloWorld [Thread-1] 你好,许林创111
+2020-08-04 18:05:29,365 INFO c.e.d.v.HelloWorld [main] Hello World
+2020-08-04 18:05:29,375 INFO c.e.d.v.HelloWorld [Thread-1] File name is C:\file.zip.
