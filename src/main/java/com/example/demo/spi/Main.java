@@ -20,24 +20,27 @@ public class Main {
 
 
     public static void main(String[] args) {
-        ServiceLoader<SPIService> serviceLoader = ServiceLoader.load(SPIService.class);
-        Iterator<SPIService> iterator = serviceLoader.iterator();
-        while (iterator.hasNext()) {
-            SPIService spiService = iterator.next();
-            spiService.execute();
-        }
-        try {
-            Class<?> clazz = Class.forName("com.example.demo.spi.impl.SPIAServiceImpl", false, Main.class.getClassLoader());
-//            SPIService p = SPIService.class.cast(clazz.newInstance());
-            SPIService p = (SPIService) clazz.newInstance();
-            p.execute();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        }
+
+        String a = "123";
+        System.out.println(a.indexOf("#"));
+//        ServiceLoader<SPIService> serviceLoader = ServiceLoader.load(SPIService.class);
+//        Iterator<SPIService> iterator = serviceLoader.iterator();
+//        while (iterator.hasNext()) {
+//            SPIService spiService = iterator.next();
+//            spiService.execute();
+//        }
+//        try {
+//            Class<?> clazz = Class.forName("com.example.demo.spi.impl.SPIAServiceImpl", false, Main.class.getClassLoader());
+////            SPIService p = SPIService.class.cast(clazz.newInstance());
+//            SPIService p = (SPIService) clazz.newInstance();
+//            p.execute();
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (IllegalAccessException e) {
+//            e.printStackTrace();
+//        } catch (InstantiationException e) {
+//            e.printStackTrace();
+//        }
     }
 
 
