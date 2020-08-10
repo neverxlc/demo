@@ -1,2 +1,254 @@
-INFO main com.example.demo.vo.HelloWorld - Hello World
-[10/08/20 10:28:54:118 CST] main  INFO vo.HelloWorld: Hello World
+[10/08/20 15:04:22:912 CST] cluster-ClusterId{value='5f30f16ca7c25f544da6de0c', description='null'}-localhost:27017 DEBUG driver.cluster: Checking status of localhost:27017
+[10/08/20 15:04:22:920 CST] cluster-ClusterId{value='5f30f16ca7c25f544da6de0c', description='null'}-localhost:27017 DEBUG protocol.command: Sending command '{"ismaster": 1, "$db": "admin"}' with request id 4 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+[10/08/20 15:04:22:921 CST] cluster-ClusterId{value='5f30f16ca7c25f544da6de0c', description='null'}-localhost:27017 DEBUG protocol.command: Execution of command with request id 4 completed successfully in 1.76 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+[10/08/20 15:04:22:968 CST] cluster-ClusterId{value='5f30f16ca7c25f544da6de0c', description='null'}-localhost:27017 DEBUG driver.cluster: Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=91.4 ms, state=CONNECTED}]
+[10/08/20 15:04:22:933 CST] main  INFO tomcat.TomcatWebServer: Tomcat started on port(s): 8000 (http) with context path ''
+[10/08/20 15:04:22:972 CST] main  INFO demo.DemoApplication: Started DemoApplication in 21.259 seconds (JVM running for 23.091)
+[10/08/20 15:04:26:210 CST] http-nio-8000-exec-1  INFO servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+[10/08/20 15:04:26:211 CST] http-nio-8000-exec-1 DEBUG servlet.DispatcherServlet: Detected StandardServletMultipartResolver
+[10/08/20 15:04:26:254 CST] http-nio-8000-exec-1 DEBUG servlet.DispatcherServlet: enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[10/08/20 15:04:26:254 CST] http-nio-8000-exec-1  INFO servlet.DispatcherServlet: Completed initialization in 43 ms
+[10/08/20 15:04:26:323 CST] http-nio-8000-exec-1 DEBUG servlet.DispatcherServlet: GET "/swagger-ui.html", parameters={}
+[10/08/20 15:04:26:329 CST] http-nio-8000-exec-1 DEBUG web.PropertySourcedRequestMappingHandlerMapping: looking up handler for path: /swagger-ui.html
+[10/08/20 15:04:26:360 CST] http-nio-8000-exec-1 DEBUG handler.SimpleUrlHandlerMapping: Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+[10/08/20 15:04:26:364 CST] http-nio-8000-exec-1 DEBUG support.OpenEntityManagerInViewInterceptor: Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:26:382 CST] http-nio-8000-exec-1 DEBUG support.OpenEntityManagerInViewInterceptor: Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:26:382 CST] http-nio-8000-exec-1 DEBUG servlet.DispatcherServlet: Completed 304 NOT_MODIFIED
+[10/08/20 15:04:26:466 CST] http-nio-8000-exec-5 DEBUG servlet.DispatcherServlet: GET "/webjars/springfox-swagger-ui/springfox.css?v=2.9.2", parameters={masked}
+[10/08/20 15:04:26:467 CST] http-nio-8000-exec-5 DEBUG web.PropertySourcedRequestMappingHandlerMapping: looking up handler for path: /webjars/springfox-swagger-ui/springfox.css
+[10/08/20 15:04:26:470 CST] http-nio-8000-exec-2 DEBUG servlet.DispatcherServlet: GET "/webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2", parameters={masked}
+[10/08/20 15:04:26:470 CST] http-nio-8000-exec-2 DEBUG web.PropertySourcedRequestMappingHandlerMapping: looking up handler for path: /webjars/springfox-swagger-ui/swagger-ui.css
+[10/08/20 15:04:26:473 CST] http-nio-8000-exec-2 DEBUG handler.SimpleUrlHandlerMapping: Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+[10/08/20 15:04:26:475 CST] http-nio-8000-exec-5 DEBUG handler.SimpleUrlHandlerMapping: Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+[10/08/20 15:04:26:475 CST] http-nio-8000-exec-5 DEBUG support.OpenEntityManagerInViewInterceptor: Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:26:481 CST] http-nio-8000-exec-5 DEBUG support.OpenEntityManagerInViewInterceptor: Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:26:481 CST] http-nio-8000-exec-5 DEBUG servlet.DispatcherServlet: Completed 304 NOT_MODIFIED
+[10/08/20 15:04:26:473 CST] http-nio-8000-exec-2 DEBUG support.OpenEntityManagerInViewInterceptor: Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:26:489 CST] http-nio-8000-exec-2 DEBUG support.OpenEntityManagerInViewInterceptor: Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:26:489 CST] http-nio-8000-exec-2 DEBUG servlet.DispatcherServlet: Completed 304 NOT_MODIFIED
+[10/08/20 15:04:26:493 CST] http-nio-8000-exec-2 DEBUG servlet.DispatcherServlet: GET "/webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2", parameters={masked}
+[10/08/20 15:04:26:494 CST] http-nio-8000-exec-2 DEBUG web.PropertySourcedRequestMappingHandlerMapping: looking up handler for path: /webjars/springfox-swagger-ui/swagger-ui-bundle.js
+[10/08/20 15:04:26:497 CST] http-nio-8000-exec-2 DEBUG handler.SimpleUrlHandlerMapping: Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+[10/08/20 15:04:26:498 CST] http-nio-8000-exec-2 DEBUG support.OpenEntityManagerInViewInterceptor: Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:26:502 CST] http-nio-8000-exec-2 DEBUG support.OpenEntityManagerInViewInterceptor: Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:26:502 CST] http-nio-8000-exec-2 DEBUG servlet.DispatcherServlet: Completed 304 NOT_MODIFIED
+[10/08/20 15:04:26:506 CST] http-nio-8000-exec-8 DEBUG servlet.DispatcherServlet: GET "/webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2", parameters={masked}
+[10/08/20 15:04:26:506 CST] http-nio-8000-exec-8 DEBUG web.PropertySourcedRequestMappingHandlerMapping: looking up handler for path: /webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js
+[10/08/20 15:04:26:511 CST] http-nio-8000-exec-8 DEBUG handler.SimpleUrlHandlerMapping: Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+[10/08/20 15:04:26:511 CST] http-nio-8000-exec-8 DEBUG support.OpenEntityManagerInViewInterceptor: Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:26:515 CST] http-nio-8000-exec-8 DEBUG support.OpenEntityManagerInViewInterceptor: Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:26:515 CST] http-nio-8000-exec-8 DEBUG servlet.DispatcherServlet: Completed 304 NOT_MODIFIED
+[10/08/20 15:04:26:524 CST] http-nio-8000-exec-9 DEBUG servlet.DispatcherServlet: GET "/webjars/springfox-swagger-ui/springfox.js?v=2.9.2", parameters={masked}
+[10/08/20 15:04:26:525 CST] http-nio-8000-exec-9 DEBUG web.PropertySourcedRequestMappingHandlerMapping: looking up handler for path: /webjars/springfox-swagger-ui/springfox.js
+[10/08/20 15:04:26:526 CST] http-nio-8000-exec-9 DEBUG handler.SimpleUrlHandlerMapping: Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+[10/08/20 15:04:26:527 CST] http-nio-8000-exec-9 DEBUG support.OpenEntityManagerInViewInterceptor: Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:26:528 CST] http-nio-8000-exec-9 DEBUG support.OpenEntityManagerInViewInterceptor: Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:26:529 CST] http-nio-8000-exec-9 DEBUG servlet.DispatcherServlet: Completed 304 NOT_MODIFIED
+[10/08/20 15:04:26:655 CST] http-nio-8000-exec-3 DEBUG servlet.DispatcherServlet: GET "/swagger-resources/configuration/ui", parameters={}
+[10/08/20 15:04:26:655 CST] http-nio-8000-exec-3 DEBUG web.PropertySourcedRequestMappingHandlerMapping: looking up handler for path: /swagger-resources/configuration/ui
+[10/08/20 15:04:26:658 CST] http-nio-8000-exec-7 DEBUG servlet.DispatcherServlet: GET "/webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2", parameters={masked}
+[10/08/20 15:04:26:661 CST] http-nio-8000-exec-7 DEBUG web.PropertySourcedRequestMappingHandlerMapping: looking up handler for path: /webjars/springfox-swagger-ui/favicon-32x32.png
+[10/08/20 15:04:26:661 CST] http-nio-8000-exec-3 DEBUG annotation.RequestMappingHandlerMapping: Mapped to springfox.documentation.swagger.web.ApiResourceController#uiConfiguration()
+[10/08/20 15:04:26:662 CST] http-nio-8000-exec-3 DEBUG support.OpenEntityManagerInViewInterceptor: Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:26:663 CST] http-nio-8000-exec-7 DEBUG handler.SimpleUrlHandlerMapping: Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+[10/08/20 15:04:26:664 CST] http-nio-8000-exec-7 DEBUG support.OpenEntityManagerInViewInterceptor: Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:26:704 CST] http-nio-8000-exec-7 DEBUG support.OpenEntityManagerInViewInterceptor: Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:26:704 CST] http-nio-8000-exec-7 DEBUG servlet.DispatcherServlet: Completed 200 OK
+[10/08/20 15:04:26:840 CST] http-nio-8000-exec-3 DEBUG annotation.HttpEntityMethodProcessor: Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[10/08/20 15:04:26:841 CST] http-nio-8000-exec-3 DEBUG annotation.HttpEntityMethodProcessor: Writing [springfox.documentation.swagger.web.UiConfiguration@7aad7df5]
+[10/08/20 15:04:26:877 CST] http-nio-8000-exec-3 DEBUG support.OpenEntityManagerInViewInterceptor: Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:26:877 CST] http-nio-8000-exec-3 DEBUG servlet.DispatcherServlet: Completed 200 OK
+[10/08/20 15:04:26:882 CST] http-nio-8000-exec-10 DEBUG servlet.DispatcherServlet: GET "/swagger-resources/configuration/security", parameters={}
+[10/08/20 15:04:26:882 CST] http-nio-8000-exec-10 DEBUG web.PropertySourcedRequestMappingHandlerMapping: looking up handler for path: /swagger-resources/configuration/security
+[10/08/20 15:04:26:884 CST] http-nio-8000-exec-10 DEBUG annotation.RequestMappingHandlerMapping: Mapped to springfox.documentation.swagger.web.ApiResourceController#securityConfiguration()
+[10/08/20 15:04:26:884 CST] http-nio-8000-exec-10 DEBUG support.OpenEntityManagerInViewInterceptor: Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:26:893 CST] http-nio-8000-exec-10 DEBUG annotation.HttpEntityMethodProcessor: Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[10/08/20 15:04:26:894 CST] http-nio-8000-exec-10 DEBUG annotation.HttpEntityMethodProcessor: Writing [springfox.documentation.swagger.web.SecurityConfiguration@3f1b18f1]
+[10/08/20 15:04:26:898 CST] http-nio-8000-exec-10 DEBUG support.OpenEntityManagerInViewInterceptor: Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:26:898 CST] http-nio-8000-exec-10 DEBUG servlet.DispatcherServlet: Completed 200 OK
+[10/08/20 15:04:26:906 CST] http-nio-8000-exec-4 DEBUG servlet.DispatcherServlet: GET "/swagger-resources", parameters={}
+[10/08/20 15:04:26:907 CST] http-nio-8000-exec-4 DEBUG web.PropertySourcedRequestMappingHandlerMapping: looking up handler for path: /swagger-resources
+[10/08/20 15:04:26:908 CST] http-nio-8000-exec-4 DEBUG annotation.RequestMappingHandlerMapping: Mapped to springfox.documentation.swagger.web.ApiResourceController#swaggerResources()
+[10/08/20 15:04:26:908 CST] http-nio-8000-exec-4 DEBUG support.OpenEntityManagerInViewInterceptor: Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:26:914 CST] http-nio-8000-exec-4 DEBUG annotation.HttpEntityMethodProcessor: Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+[10/08/20 15:04:26:915 CST] http-nio-8000-exec-4 DEBUG annotation.HttpEntityMethodProcessor: Writing [[springfox.documentation.swagger.web.SwaggerResource@10343b1c]]
+[10/08/20 15:04:26:922 CST] http-nio-8000-exec-4 DEBUG support.OpenEntityManagerInViewInterceptor: Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:26:923 CST] http-nio-8000-exec-4 DEBUG servlet.DispatcherServlet: Completed 200 OK
+[10/08/20 15:04:26:957 CST] http-nio-8000-exec-1 DEBUG servlet.DispatcherServlet: GET "/v2/api-docs", parameters={}
+[10/08/20 15:04:26:960 CST] http-nio-8000-exec-1 DEBUG web.PropertySourcedRequestMappingHandlerMapping: looking up handler for path: /v2/api-docs
+[10/08/20 15:04:26:960 CST] http-nio-8000-exec-1 DEBUG web.PropertySourcedRequestMappingHandlerMapping: Mapped to springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)
+[10/08/20 15:04:26:971 CST] http-nio-8000-exec-5 DEBUG servlet.DispatcherServlet: GET "/", parameters={}
+[10/08/20 15:04:26:971 CST] http-nio-8000-exec-5 DEBUG web.PropertySourcedRequestMappingHandlerMapping: looking up handler for path: /
+[10/08/20 15:04:26:973 CST] http-nio-8000-exec-5 DEBUG handler.SimpleUrlHandlerMapping: Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+[10/08/20 15:04:26:973 CST] http-nio-8000-exec-5 DEBUG support.OpenEntityManagerInViewInterceptor: Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:26:974 CST] http-nio-8000-exec-5 DEBUG resource.ResourceHttpRequestHandler: Resource not found
+[10/08/20 15:04:26:974 CST] http-nio-8000-exec-5 DEBUG support.OpenEntityManagerInViewInterceptor: Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:26:975 CST] http-nio-8000-exec-5 DEBUG servlet.DispatcherServlet: Completed 404 NOT_FOUND
+[10/08/20 15:04:26:988 CST] http-nio-8000-exec-5 DEBUG servlet.DispatcherServlet: "ERROR" dispatch for GET "/error", parameters={}
+[10/08/20 15:04:26:989 CST] http-nio-8000-exec-5 DEBUG web.PropertySourcedRequestMappingHandlerMapping: looking up handler for path: /error
+[10/08/20 15:04:26:991 CST] http-nio-8000-exec-5 DEBUG annotation.RequestMappingHandlerMapping: Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[10/08/20 15:04:26:991 CST] http-nio-8000-exec-5 DEBUG support.OpenEntityManagerInViewInterceptor: Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:27:001 CST] http-nio-8000-exec-5 DEBUG annotation.HttpEntityMethodProcessor: Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[10/08/20 15:04:27:002 CST] http-nio-8000-exec-5 DEBUG annotation.HttpEntityMethodProcessor: Writing [{timestamp=Mon Aug 10 15:04:26 CST 2020, status=404, error=Not Found, message=No message available,  (truncated)...]
+[10/08/20 15:04:27:025 CST] http-nio-8000-exec-6 DEBUG servlet.DispatcherServlet: GET "/webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-700.woff2", parameters={}
+[10/08/20 15:04:27:026 CST] http-nio-8000-exec-6 DEBUG web.PropertySourcedRequestMappingHandlerMapping: looking up handler for path: /webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-700.woff2
+[10/08/20 15:04:27:029 CST] http-nio-8000-exec-6 DEBUG handler.SimpleUrlHandlerMapping: Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+[10/08/20 15:04:27:030 CST] http-nio-8000-exec-6 DEBUG support.OpenEntityManagerInViewInterceptor: Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:27:032 CST] http-nio-8000-exec-6 DEBUG support.OpenEntityManagerInViewInterceptor: Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:27:033 CST] http-nio-8000-exec-6 DEBUG servlet.DispatcherServlet: Completed 304 NOT_MODIFIED
+[10/08/20 15:04:27:054 CST] http-nio-8000-exec-5 DEBUG support.OpenEntityManagerInViewInterceptor: Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:27:054 CST] http-nio-8000-exec-5 DEBUG servlet.DispatcherServlet: Exiting from "ERROR" dispatch, status 404
+[10/08/20 15:04:27:078 CST] http-nio-8000-exec-2 DEBUG servlet.DispatcherServlet: GET "/csrf", parameters={}
+[10/08/20 15:04:27:078 CST] http-nio-8000-exec-2 DEBUG web.PropertySourcedRequestMappingHandlerMapping: looking up handler for path: /csrf
+[10/08/20 15:04:27:080 CST] http-nio-8000-exec-2 DEBUG handler.SimpleUrlHandlerMapping: Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+[10/08/20 15:04:27:080 CST] http-nio-8000-exec-2 DEBUG support.OpenEntityManagerInViewInterceptor: Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:27:087 CST] http-nio-8000-exec-2 DEBUG resource.ResourceHttpRequestHandler: Resource not found
+[10/08/20 15:04:27:088 CST] http-nio-8000-exec-2 DEBUG support.OpenEntityManagerInViewInterceptor: Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:27:088 CST] http-nio-8000-exec-2 DEBUG servlet.DispatcherServlet: Completed 404 NOT_FOUND
+[10/08/20 15:04:27:089 CST] http-nio-8000-exec-2 DEBUG servlet.DispatcherServlet: "ERROR" dispatch for GET "/error", parameters={}
+[10/08/20 15:04:27:089 CST] http-nio-8000-exec-2 DEBUG web.PropertySourcedRequestMappingHandlerMapping: looking up handler for path: /error
+[10/08/20 15:04:27:091 CST] http-nio-8000-exec-2 DEBUG annotation.RequestMappingHandlerMapping: Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[10/08/20 15:04:27:091 CST] http-nio-8000-exec-2 DEBUG support.OpenEntityManagerInViewInterceptor: Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:27:092 CST] http-nio-8000-exec-2 DEBUG annotation.HttpEntityMethodProcessor: Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[10/08/20 15:04:27:092 CST] http-nio-8000-exec-2 DEBUG annotation.HttpEntityMethodProcessor: Writing [{timestamp=Mon Aug 10 15:04:27 CST 2020, status=404, error=Not Found, message=No message available,  (truncated)...]
+[10/08/20 15:04:27:094 CST] http-nio-8000-exec-2 DEBUG support.OpenEntityManagerInViewInterceptor: Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:27:094 CST] http-nio-8000-exec-2 DEBUG servlet.DispatcherServlet: Exiting from "ERROR" dispatch, status 404
+[10/08/20 15:04:27:477 CST] http-nio-8000-exec-1 DEBUG annotation.HttpEntityMethodProcessor: Using 'application/json', given [application/json, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+[10/08/20 15:04:27:479 CST] http-nio-8000-exec-1 DEBUG annotation.HttpEntityMethodProcessor: Writing [springfox.documentation.spring.web.json.Json@6611b82c]
+[10/08/20 15:04:27:485 CST] http-nio-8000-exec-1 DEBUG servlet.DispatcherServlet: Completed 200 OK
+[10/08/20 15:04:27:691 CST] http-nio-8000-exec-8 DEBUG servlet.DispatcherServlet: GET "/webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-300.woff2", parameters={}
+[10/08/20 15:04:27:692 CST] http-nio-8000-exec-8 DEBUG web.PropertySourcedRequestMappingHandlerMapping: looking up handler for path: /webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-300.woff2
+[10/08/20 15:04:27:693 CST] http-nio-8000-exec-9 DEBUG servlet.DispatcherServlet: GET "/webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-regular.woff2", parameters={}
+[10/08/20 15:04:27:693 CST] http-nio-8000-exec-9 DEBUG web.PropertySourcedRequestMappingHandlerMapping: looking up handler for path: /webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-regular.woff2
+[10/08/20 15:04:27:695 CST] http-nio-8000-exec-9 DEBUG handler.SimpleUrlHandlerMapping: Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+[10/08/20 15:04:27:695 CST] http-nio-8000-exec-9 DEBUG support.OpenEntityManagerInViewInterceptor: Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:27:697 CST] http-nio-8000-exec-9 DEBUG support.OpenEntityManagerInViewInterceptor: Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:27:697 CST] http-nio-8000-exec-9 DEBUG servlet.DispatcherServlet: Completed 304 NOT_MODIFIED
+[10/08/20 15:04:27:701 CST] http-nio-8000-exec-8 DEBUG handler.SimpleUrlHandlerMapping: Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+[10/08/20 15:04:27:701 CST] http-nio-8000-exec-8 DEBUG support.OpenEntityManagerInViewInterceptor: Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:27:703 CST] http-nio-8000-exec-8 DEBUG support.OpenEntityManagerInViewInterceptor: Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:27:704 CST] http-nio-8000-exec-8 DEBUG servlet.DispatcherServlet: Completed 304 NOT_MODIFIED
+[10/08/20 15:04:31:439 CST] http-nio-8000-exec-7 DEBUG servlet.DispatcherServlet: GET "/webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-600.woff2", parameters={}
+[10/08/20 15:04:31:439 CST] http-nio-8000-exec-7 DEBUG web.PropertySourcedRequestMappingHandlerMapping: looking up handler for path: /webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-600.woff2
+[10/08/20 15:04:31:440 CST] http-nio-8000-exec-7 DEBUG handler.SimpleUrlHandlerMapping: Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+[10/08/20 15:04:31:441 CST] http-nio-8000-exec-7 DEBUG support.OpenEntityManagerInViewInterceptor: Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:31:443 CST] http-nio-8000-exec-7 DEBUG support.OpenEntityManagerInViewInterceptor: Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[10/08/20 15:04:31:443 CST] http-nio-8000-exec-7 DEBUG servlet.DispatcherServlet: Completed 304 NOT_MODIFIED
+[10/08/20 15:04:32:972 CST] cluster-ClusterId{value='5f30f16ca7c25f544da6de0c', description='null'}-localhost:27017 DEBUG driver.cluster: Checking status of localhost:27017
+[10/08/20 15:04:32:988 CST] cluster-ClusterId{value='5f30f16ca7c25f544da6de0c', description='null'}-localhost:27017 DEBUG protocol.command: Sending command '{"ismaster": 1, "$db": "admin"}' with request id 5 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+[10/08/20 15:04:32:997 CST] cluster-ClusterId{value='5f30f16ca7c25f544da6de0c', description='null'}-localhost:27017 DEBUG protocol.command: Execution of command with request id 5 completed successfully in 22.10 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+[10/08/20 15:04:33:002 CST] cluster-ClusterId{value='5f30f16ca7c25f544da6de0c', description='null'}-localhost:27017 DEBUG driver.cluster: Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=79.0 ms, state=CONNECTED}]
+[10/08/20 15:04:43:004 CST] cluster-ClusterId{value='5f30f16ca7c25f544da6de0c', description='null'}-localhost:27017 DEBUG driver.cluster: Checking status of localhost:27017
+[10/08/20 15:04:43:008 CST] cluster-ClusterId{value='5f30f16ca7c25f544da6de0c', description='null'}-localhost:27017 DEBUG protocol.command: Sending command '{"ismaster": 1, "$db": "admin"}' with request id 6 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+[10/08/20 15:04:43:010 CST] cluster-ClusterId{value='5f30f16ca7c25f544da6de0c', description='null'}-localhost:27017 DEBUG protocol.command: Execution of command with request id 6 completed successfully in 4.16 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+[10/08/20 15:04:43:011 CST] cluster-ClusterId{value='5f30f16ca7c25f544da6de0c', description='null'}-localhost:27017 DEBUG driver.cluster: Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=64.6 ms, state=CONNECTED}]
+[10/08/20 15:04:53:013 CST] cluster-ClusterId{value='5f30f16ca7c25f544da6de0c', description='null'}-localhost:27017 DEBUG driver.cluster: Checking status of localhost:27017
+[10/08/20 15:04:53:016 CST] cluster-ClusterId{value='5f30f16ca7c25f544da6de0c', description='null'}-localhost:27017 DEBUG protocol.command: Sending command '{"ismaster": 1, "$db": "admin"}' with request id 7 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+[10/08/20 15:04:53:019 CST] cluster-ClusterId{value='5f30f16ca7c25f544da6de0c', description='null'}-localhost:27017 DEBUG protocol.command: Execution of command with request id 7 completed successfully in 4.18 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+[10/08/20 15:04:53:021 CST] cluster-ClusterId{value='5f30f16ca7c25f544da6de0c', description='null'}-localhost:27017 DEBUG driver.cluster: Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=53.0 ms, state=CONNECTED}]
+[10/08/20 15:05:03:022 CST] cluster-ClusterId{value='5f30f16ca7c25f544da6de0c', description='null'}-localhost:27017 DEBUG driver.cluster: Checking status of localhost:27017
+[10/08/20 15:05:03:023 CST] cluster-ClusterId{value='5f30f16ca7c25f544da6de0c', description='null'}-localhost:27017 DEBUG protocol.command: Sending command '{"ismaster": 1, "$db": "admin"}' with request id 8 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+[10/08/20 15:05:03:025 CST] cluster-ClusterId{value='5f30f16ca7c25f544da6de0c', description='null'}-localhost:27017 DEBUG protocol.command: Execution of command with request id 8 completed successfully in 2.89 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+[10/08/20 15:05:03:026 CST] cluster-ClusterId{value='5f30f16ca7c25f544da6de0c', description='null'}-localhost:27017 DEBUG driver.cluster: Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=43.3 ms, state=CONNECTED}]
+[10/08/20 15:05:13:029 CST] cluster-ClusterId{value='5f30f16ca7c25f544da6de0c', description='null'}-localhost:27017 DEBUG driver.cluster: Checking status of localhost:27017
+[10/08/20 15:05:13:031 CST] cluster-ClusterId{value='5f30f16ca7c25f544da6de0c', description='null'}-localhost:27017 DEBUG protocol.command: Sending command '{"ismaster": 1, "$db": "admin"}' with request id 9 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+[10/08/20 15:05:13:033 CST] cluster-ClusterId{value='5f30f16ca7c25f544da6de0c', description='null'}-localhost:27017 DEBUG protocol.command: Execution of command with request id 9 completed successfully in 3.20 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+[10/08/20 15:05:13:034 CST] cluster-ClusterId{value='5f30f16ca7c25f544da6de0c', description='null'}-localhost:27017 DEBUG driver.cluster: Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=35.7 ms, state=CONNECTED}]
+[10/08/20 15:05:20:638 CST] SpringContextShutdownHook DEBUG context.AnnotationConfigServletWebServerApplicationContext: Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4149c063, started on Mon Aug 10 15:04:02 CST 2020
+[10/08/20 15:05:20:641 CST] SpringContextShutdownHook DEBUG support.DefaultLifecycleProcessor: Stopping beans in phase 2147483647
+[10/08/20 15:05:20:645 CST] SpringContextShutdownHook DEBUG support.DefaultLifecycleProcessor: Bean 'documentationPluginsBootstrapper' completed its stop procedure
+[10/08/20 15:05:20:646 CST] SpringContextShutdownHook  INFO concurrent.ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+[10/08/20 15:05:20:654 CST] SpringContextShutdownHook  INFO jpa.LocalContainerEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+[10/08/20 15:05:20:654 CST] SpringContextShutdownHook DEBUG internal.SessionFactoryImpl: HHH000031: Closing
+[10/08/20 15:05:20:656 CST] SpringContextShutdownHook  INFO internal.SchemaDropperImpl$DelayedDropActionImpl: HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[10/08/20 15:05:20:658 CST] SpringContextShutdownHook DEBUG hibernate.SQL: drop table book if exists
+[10/08/20 15:05:20:704 CST] Druid-ConnectionPool-Create-737947531 ERROR pool.DruidDataSource: create connection SQLException, url: jdbc:h2:file:~/testdb, errorCode 90020, state 90020
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:206)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:182)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466)
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/GitCloud/testdb.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:166)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	... 20 more
+Caused by: java.nio.channels.OverlappingFileLockException
+	at sun.nio.ch.SharedFileLockTable.checkList(FileLockTable.java:255)
+	at sun.nio.ch.SharedFileLockTable.add(FileLockTable.java:152)
+	at sun.nio.ch.FileChannelImpl.tryLock(FileChannelImpl.java:1108)
+	at org.h2.store.fs.FileNio.tryLock(FilePathNio.java:121)
+	at java.nio.channels.FileChannel.tryLock(FileChannel.java:1155)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	... 23 more
+[10/08/20 15:05:20:720 CST] Druid-ConnectionPool-Create-737947531 ERROR pool.DruidDataSource: create connection SQLException, url: jdbc:h2:file:~/testdb, errorCode 90020, state 90020
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:206)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:182)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466)
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/GitCloud/testdb.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:166)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	... 20 more
+Caused by: java.nio.channels.OverlappingFileLockException
+	at sun.nio.ch.SharedFileLockTable.checkList(FileLockTable.java:255)
+	at sun.nio.ch.SharedFileLockTable.add(FileLockTable.java:152)
+	at sun.nio.ch.FileChannelImpl.tryLock(FileChannelImpl.java:1108)
+	at org.h2.store.fs.FileNio.tryLock(FilePathNio.java:121)
+	at java.nio.channels.FileChannel.tryLock(FileChannel.java:1155)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	... 23 more
+[10/08/20 15:05:21:237 CST] SpringContextShutdownHook DEBUG hibernate.SQL: drop sequence if exists hibernate_sequence
+[10/08/20 15:05:21:241 CST] SpringContextShutdownHook DEBUG spi.TypeConfiguration$Scope: Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@69b9cd37] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@374ba492]
+[10/08/20 15:05:21:244 CST] SpringContextShutdownHook DEBUG internal.AbstractServiceRegistryImpl: Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+[10/08/20 15:05:21:244 CST] SpringContextShutdownHook DEBUG internal.BootstrapServiceRegistryImpl: Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+[10/08/20 15:05:21:247 CST] cluster-ClusterId{value='5f30f16ca7c25f544da6de0c', description='null'}-localhost:27017 DEBUG driver.connection: Closing connection connectionId{localValue:1, serverValue:19}
+[10/08/20 15:05:21:297 CST] SpringContextShutdownHook  INFO pool.DruidDataSource: {dataSource-1} closed

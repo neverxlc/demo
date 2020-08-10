@@ -7,6 +7,7 @@ import com.example.demo.domain.Car;
 import com.example.demo.domain.CarDTO;
 import com.example.demo.mapper.CarMapper;
 import com.example.demo.service.StorageProperties;
+import com.spring4all.swagger.EnableSwagger2Doc;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.Banner;
@@ -41,6 +42,7 @@ import java.util.concurrent.TimeUnit;
 //@EnableGlobalExceptionHandler
 //@EnableParamPrint
 //@ComponentScan(basePackages={"com.example.demo"})
+@EnableSwagger2Doc
 public class DemoApplication extends SpringBootServletInitializer {
 
 //	@Autowired
