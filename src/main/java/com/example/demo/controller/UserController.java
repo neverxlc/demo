@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import com.example.demo.domain.User;
 import com.example.demo.managedBean.NameService;
 import com.example.demo.managedBean.ScannerService;
+import com.example.demo.managedBean.TestDefaultAnnotationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,6 +17,14 @@ public class UserController {
     private ScannerService scannerService;
     @Autowired
     private NameService nameService;
+    @Autowired
+    private TestDefaultAnnotationService testDefaultAnnotationService;
+
+    @GetMapping(value = "/default")
+    public String defaultAnnotation(){
+        testDefaultAnnotationService.demo();
+        return "NB";
+    }
 
     @GetMapping("/named")
     public String named(){
