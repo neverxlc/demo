@@ -42,7 +42,7 @@ import java.util.concurrent.TimeUnit;
 //@EnableGlobalExceptionHandler
 //@EnableParamPrint
 //@ComponentScan(basePackages={"com.example.demo"})
-@EnableSwagger2Doc
+//@EnableSwagger2Doc
 public class DemoApplication extends SpringBootServletInitializer {
 
 //	@Autowired
