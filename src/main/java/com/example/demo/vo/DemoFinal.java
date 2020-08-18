@@ -1,5 +1,8 @@
 package com.example.demo.vo;
 
+import org.springframework.core.type.ClassMetadata;
+import org.springframework.core.type.StandardClassMetadata;
+
 public class DemoFinal {
 
     private final int a;
@@ -25,9 +28,14 @@ public class DemoFinal {
 //        demoFinal.getA();
         System.out.println(demoFinal.getA());
         System.out.println(demoFinal.isB());
-        DemoFinal demoFinal1 = (DemoFinal) demoFinal.clone();
+//        DemoFinal demoFinal1 = (DemoFinal) demoFinal.clone();
+//
+//        System.out.println(demoFinal);
+//        System.out.println(demoFinal1);
 
-        System.out.println(demoFinal);
-        System.out.println(demoFinal1);
+
+        ClassMetadata classMetadata = new StandardClassMetadata(DemoFinal.class);
+        System.out.println(classMetadata.getClassName());
+        System.out.println(classMetadata.isFinal());
     }
 }

@@ -38,15 +38,15 @@ import java.util.concurrent.TimeUnit;
 @SpringBootApplication
 @Slf4j
 @EnableConfigurationProperties(StorageProperties.class)
-//@EnableScheduling
+@EnableScheduling
 //@EnableGlobalExceptionHandler
 //@EnableParamPrint
 //@ComponentScan(basePackages={"com.example.demo"})
 //@EnableSwagger2Doc
-public class DemoApplication extends SpringBootServletInitializer {
+public class DemoApplication extends SpringBootServletInitializer implements CommandLineRunner{
 
-//	@Autowired
-//	private ThreadPoolTaskScheduler taskScheduler;
+	@Autowired
+	private ThreadPoolTaskScheduler taskScheduler;
 
 	public static void main(String[] args) {
 //		System.out.println("传入的参数是" + args[0]);
@@ -62,13 +62,13 @@ public class DemoApplication extends SpringBootServletInitializer {
 //		return builder.sources(DemoApplication.class);
 //	}
 
-//	@Override
-//	public void run(String... args) throws Exception {
+	@Override
+	public void run(String... args) throws Exception {
 
 //		log.info("你好世界,{},zheshi ceshi ", args);
-//		System.out.println("hhhhh");
-//		System.err.println("xxxxxx");
-//		test();
+		System.out.println("hhhhh");
+		System.err.println("xxxxxx");
+		test();
 //		ThreadPoolTaskScheduler taskScheduler = new ThreadPoolTaskScheduler();
 //		taskScheduler.initialize();
 //		taskScheduler.getScheduledExecutor().scheduleAtFixedRate(()->{
@@ -78,7 +78,7 @@ public class DemoApplication extends SpringBootServletInitializer {
 //			System.out.println("当前线程是"+Thread.currentThread().getName());
 //		}, new Date(), 10);
 
-//	}
+	}
 
 	private void test(){
 //		Car car = new Car( "Morris", 5);
