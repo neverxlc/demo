@@ -1,12 +1,8 @@
 package com.example.demo;
 
 import com.example.demo.domain.User;
-import com.example.demo.spi.SPIService;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.io.IOException;
-import java.net.URL;
-import java.text.MessageFormat;
 import java.util.*;
 
 public class Demo {

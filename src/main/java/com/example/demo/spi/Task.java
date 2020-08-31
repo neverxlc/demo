@@ -3,10 +3,7 @@ package com.example.demo.spi;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.*;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -22,44 +19,73 @@ public class Task{
 
 
     public void write(String number){
-        synchronized (object) {
-            list.add(number);
-            object.notifyAll();
-        }
-
-
-//        lock.lock();
-//        try {
+//        synchronized (object) {
 //            list.add(number);
-//            condition.signalAll();
-//        } finally {
-//            lock.unlock();
+//            object.notifyAll();
 //        }
+
+
+        lock.lock();
+        try {
+            list.add(number);
+            condition.signalAll();
+        } finally {
+            lock.unlock();
+        }
     }
 
     public void read(){
-        synchronized (object) {
-            System.out.println("read pre "+list);
-            try {
-                object.wait();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            System.out.println("read post "+list);
-        }
-//        lock.lock();
-//        try {
-//            System.out.println("pre"+list);
-//            condition.await();
-//            System.out.println("post"+list);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        } finally {
-//            lock.unlock();
+//        synchronized (object) {
+//            System.out.println("read pre "+list);
+//            try {
+//                object.wait();
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//            System.out.println("read post "+list);
 //        }
+        lock.lock();
+        try {
+            System.out.println("pre"+list);
+            condition.await();
+            System.out.println("post"+list);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+            lock.unlock();
+        }
     }
 
 
+    public static void main(String[] args) {
+        CountDownLatch countDownLatch = new CountDownLatch(2);
+        Task task = new Task();
+        Thread t1 = new Thread(()-> {
+            System.out.println(Thread.currentThread().getName()+"pre await ");
+            try {
+                TimeUnit.SECONDS.sleep(5);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            task.write("11212");
+            System.out.println("is over");
+            countDownLatch.countDown();
+        });
+        Thread t2 = new Thread(()-> {
+            System.out.println(Thread.currentThread().getName()+" pre signalAll");
+            task.read();
+            System.out.println(Thread.currentThread().getName()+" post signalAll");
+            countDownLatch.countDown();
+        });
+        t1.start();
+        t2.start();
+        try {
+            countDownLatch.await();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("这是测试");
+    }
 
 
 

@@ -9,6 +9,7 @@ import com.example.demo.mapper.CarMapper;
 import com.example.demo.service.StorageProperties;
 import com.spring4all.swagger.EnableSwagger2Doc;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.tomcat.jni.OS;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.Banner;
 import org.springframework.boot.CommandLineRunner;
@@ -64,6 +65,10 @@ public class DemoApplication extends SpringBootServletInitializer implements Com
 
 	@Override
 	public void run(String... args) throws Exception {
+
+
+//		System.out.println("当前系统是64=="+OS.IS_WIN64);
+//		System.out.println("当前系统是32=="+OS.IS_WIN32);
 
 //		log.info("你好世界,{},zheshi ceshi ", args);
 		System.out.println("hhhhh");
