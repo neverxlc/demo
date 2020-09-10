@@ -40,6 +40,15 @@ public class BaseReponse implements Serializable {
     public static void main(String[] args) {
 
 
+        String path = "https://baike.baidu.com/item/%E8%97%9C%E8%8B%8B/7696441?fr=aladdin";
+        String[] pathSplit = path.split("/", 0);
+
+        for (String str: pathSplit) {
+            System.out.println(str);
+        }
+
+
+
 //        JavaVersion.getJavaVersion().name();
         System.out.println(JavaVersion.getJavaVersion().toString());
         /*String queryParam = "name=xlc&age=20&sex=man";

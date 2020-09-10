@@ -1,7 +1,6 @@
 package com.example.demo.annotation;
 
-import com.example.demo.apo.ParamAspect;
-import com.example.demo.interceptor.GlobalExceptionHandler;
+import com.example.demo.aop.ParamAspect;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.ElementType;
