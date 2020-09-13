@@ -1,0 +1,3 @@
+2020-09-13 22:52:42,567 - ResourceManager : unable to find resource 'template.vm' in any resource loader.
+2020-09-13 22:55:41,706 - ResourceManager : unable to find resource '/templates/template.vm' in any resource loader.
+2020-09-13 22:57:07,223 - ResourceManager : unable to find resource 'templates/template.vm' in any resource loader.

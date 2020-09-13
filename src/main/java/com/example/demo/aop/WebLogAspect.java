@@ -49,7 +49,7 @@ public class WebLogAspect {
     // 同步问题 ThreadLocal
     ThreadLocal<Long> startTime = new ThreadLocal<>();
 
-    @Pointcut("execution (public * com.example.demo.service..*.*(..))")
+    @Pointcut("execution(* com.example..controller..*(..))")
     public void webLog() {}
 
     @Before("webLog()")
@@ -76,12 +76,12 @@ public class WebLogAspect {
 
 
 
-    @AfterReturning
-    public void doAfterReturning(Object ret) throws Throwable {
-        // 处理完请求，返回内容
-        logger.info("RESPONSE : " + ret);
-        logger.info("SPEND TIME : " + (System.currentTimeMillis() - startTime.get()));
-    }
+//    @AfterReturning("webLog()")
+//    public void doAfterReturning(Object ret) throws Throwable {
+//        // 处理完请求，返回内容
+//        logger.info("RESPONSE : " + ret);
+//        logger.info("SPEND TIME : " + (System.currentTimeMillis() - startTime.get()));
+//    }
 
 
 
