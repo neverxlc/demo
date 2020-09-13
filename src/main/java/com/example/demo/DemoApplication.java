@@ -27,6 +27,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 import org.springframework.util.StringUtils;
@@ -40,6 +41,7 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 @EnableConfigurationProperties(StorageProperties.class)
 @EnableScheduling
+@EnableAsync
 //@EnableGlobalExceptionHandler
 //@EnableParamPrint
 //@ComponentScan(basePackages={"com.example.demo"})
@@ -54,6 +56,7 @@ public class DemoApplication extends SpringBootServletInitializer implements Com
 		SpringApplication.run(DemoApplication.class, args);
 //		SpringApplication app = new SpringApplication(DemoApplication.class);
 //		app.setBannerMode(Banner.Mode.OFF);
+//		app.setAddCommandLineProperties(false); //屏蔽命令行访问属性的设置
 //		app.run(args);
 
 	}

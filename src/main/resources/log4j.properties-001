@@ -7,6 +7,7 @@
 #log4j.appender.stdout.layout.ConversionPattern=[%d{dd/MM/yy HH:mm:ss:SSS z}] %t %5p %c{2}: %m%n
 
 
+#####log4j.category.com.example = debug, stdout
 log4j.rootLogger=debug, stdout, R
 
 log4j.appender.stdout=org.apache.log4j.ConsoleAppender
